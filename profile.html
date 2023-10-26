@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vignesh Profile</title>
+
+    <style>
+        .vicky {
+          background-color: #3f6b89;
+          text-align: center;
+          border: 3px solid #3f6b89;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: #fff;
+        }
+
+        body {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#fdf1f1;
+        }
+
+        nav {
+            background-color: #adbdc8;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:#ffffff;        
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0.5pc;
+        }
+
+        nav ul li {
+            display: inline;
+            padding:  10px;
+        }
+
+        .sec-content {
+            background-color: #adbdc8;
+            padding: 2rem;
+            margin: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #3f6b89;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: lower-roman;
+            padding-left: 20px;
+        }
+    </style>
+    
+        
+</head>
+
+
+<body>
+
+    <div class="vicky">
+        <h1>VIGNESH S</h1>
+        <h3>Bachelor of Computer Application</h3>
+    </div>  
+    
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="sec-content">
+            <h2><U>About Me</U></h2>
+            <p>Hello Everyone <br> I am Vignesh S and now i studying third year of BCA in SRM Trichy Arts and Science College.</p>
+        </div>
+    </section>
+
+
+    <section id="education">
+        <div class="sec-content">
+            <h2><u>Education</u></h2>
+            <ul>
+                <li>Studying third yera of BCA in SRM Trichy Arts and Science College.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <div class="sec-content">
+            <h2><u>Hobbies</u></h2>
+            <ul>
+                <li>Playing Cricket</li>
+                <li>Reading Books</li>
+                <li>Walking</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>Ph: 9159430144</p>
+        <p>E-mail: sathishkumarvignesh396@gmail.com</p>
+        <p>&copy; 2023 Vignesh</p><br>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click',function(e){
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if(targetElement){
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
